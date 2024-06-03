@@ -1,0 +1,13 @@
+{
+"users":[
+    {"id":1, "name": "حسین ناصری" ,"origin_city":"یاسوج", "age": 30, "deathDate": 2020,"fathers_name":"علی","mothers_name":"زهرا","nickname":"بهروز","birth_date":2018,"birth_city":"کرج","death_city":"تبریز","burial_city":"تبریز","cemetry_name":"شهدا","gender":"مرد","deathType":"طبیعی" },
+    {"id":2 ,"name": "علی",  "origin_city": "کرج", "age": 25, "deathDate": 2005,"fathers_name":"حسین","mothers_name":"فاطمه","nickname":"سالار","birth_date":2013,"birth_city":"زنجان","death_city":"کرج","burial_city":"گرگان","cemetry_name":"انقلاب","gender":"مرد","deathType":"حادثه"},
+    {"id":3, "name": "پارسا","origin_city": "تهران","age": 40, "deathDate": 2012,"fathers_name":"محمد","mothers_name":"فاطمه","nickname":"احمد","birth_date":2010,"birth_city":"اهواز","death_city":"اهواز","burial_city":"تهران","cemetry_name":"ملی" ,"gender":"مرد","deathType":"طبیعی"},
+    {"id":4 ,"name": "ساناز","origin_city": "گرگان", "age": 40, "deathDate": 2017 ,"fathers_name":"علی","mothers_name":"فاطمه","nickname":"بهروز","birth_date":2005,"birth_city":"کرج","death_city":"کرمان","burial_city":"اهواز","cemetry_name":"بلوار","gender":"زن","deathType":"حادثه"},
+    {"id":5 ,"name": "مریم", "origin_city": "گرگان", "age": 40, "deathDate": 2018 ,"fathers_name":"علی","mothers_name":"فاطمه","nickname":"بهروز","birth_date":2008,"birth_city":"تهران","death_city":"مشهد","burial_city":"کرمان","cemetry_name":"ازادی","gender":"زن","deathType":"طبیعی"},
+    {"id":6, "name": "مریم","origin_city": "گرگان", "age": 40, "deathDate": 2020 ,"fathers_name":"علی","mothers_name":"فاطمه","nickname":"بهروز","birth_date":2016,"birth_city":"تهران","death_city":"مشهد","burial_city":"کرج","cemetry_name":"بهشت","gender":"زن","deathType":"حادثه"},
+    {"id":6, "name": "ساناز","origin_city": "گرگان", "age": 25, "deathDate": 2024 ,"fathers_name":"مصطفی","mothers_name":"فاطمه","nickname":"بهروز","birth_date":2023,"birth_city":"کرج","death_city":"مشهد","burial_city":"کرج","cemetry_name":"بهشت","gender":"زن","deathType":"طبیعی"}
+]
+        
+    
+}
