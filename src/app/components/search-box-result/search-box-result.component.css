@@ -1,0 +1,47 @@
+.custom-width1{
+    border-radius: 10px;
+    border:2px solid #999;
+    width: 100%;
+    max-height: 60%;
+  
+}
+
+
+.custom-content-styles{
+background-color: #003c43;
+border-radius: 14px;
+width: 28%;
+cursor: pointer;
+text-align: center;
+
+}
+
+.custom-radius{
+    border-radius: 50%;
+    border: 3px solid #111;
+    text-align: center;
+    width: 27%;
+}
+
+
+
+.info-style{
+    width: 33%;
+}
+
+
+@media (min-width: 992px) {
+    .h1-custom {
+      font-size: 17px;
+    }
+
+  }
+  
+  @media (min-width: 768px) {
+    .h1-custom {
+      font-size: 15px;
+    }
+   
+  }
+  
+ 
