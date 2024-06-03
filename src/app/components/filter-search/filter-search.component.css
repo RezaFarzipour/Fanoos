@@ -1,0 +1,86 @@
+
+  .main-div{
+ width: fit-content;
+ background-color: #003c43;
+    
+  }
+
+
+  .width{
+    width: 50%;
+  }
+
+  .radius{
+    border-radius: 10px;
+  }
+
+
+  .custom-width{
+    width:100%;
+    
+  }
+
+  .custom-bg{
+    background-color: #e3fef7;
+  }
+
+  .custom-bg-select-input {
+    background-color: #77b0aa;
+    
+  }
+
+.button{
+  text-align: center;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+  top: 13%;
+  left: 0;
+  right: -18px;
+  transform: translateY(-50%); 
+  width: 18px;
+  height: 35px;
+  background-color: #003c43;
+  
+  cursor: pointer;
+}
+
+
+
+
+
+
+  #inputGroupSelect01 {
+    
+   color: #fff;
+ 
+  }
+
+  #inputGroupSelect01 option{
+    background-color: #fff;
+  color: #111;
+  }
+
+  .custom-text-color {
+    color: #e3fef7;
+  }
+
+  .ml{
+    margin-left:5px ;
+  }
+
+.custom-margin{
+    margin-left: 27%;
+}
+
+.custom-button-width{
+    width: 90%;
+    
+}
+
+.outeline{
+    outline: 0;
+}
+
+
+
+

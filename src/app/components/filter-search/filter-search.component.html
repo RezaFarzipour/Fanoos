@@ -1,0 +1,209 @@
+
+<div class="d-flex flex-column p-4 radius main-div position-relative ">
+  <button class="button position-absolute border-0">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-caret-left text-light"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"
+      />
+    </svg>
+  </button>
+
+  <div class="w-100 d-flex justify-content-between mb-3 gap-3">
+    <div class="width">
+      <input
+        [(ngModel)]="searchName_familyname"
+        class="outeline radius custom-bg p-2 border-0"
+        type="text"
+        placeholder="نام و نام خانوادگی"
+      />
+    </div>
+    <div class="width">
+      <input
+        [(ngModel)]="searchAge"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder="سن"
+      />
+    </div>
+  </div>
+
+  <div class="w-100 d-flex justify-content-between mb-3 gap-3">
+    <div class="width">
+      <input
+        [(ngModel)]="search_father_name"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder="نام پدر"
+      />
+    </div>
+    <div class="width">
+      <input
+        [(ngModel)]="search_mother_name"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder="نام مادر"
+      />
+    </div>
+  </div>
+
+  <div class="w-100 d-flex justify-content-between mb-3 gap-3">
+    <div class="width">
+      <input
+        [(ngModel)]="search_nickname"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder=" اسم مستعار"
+      />
+    </div>
+    <div class="width">
+      <input
+        [(ngModel)]="search_birth_date"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder="سال تولد"
+      />
+    </div>
+  </div>
+
+  <div class="w-100 d-flex justify-content-between mb-3 gap-3">
+    <div class="width">
+      <input
+        [(ngModel)]="search_death_year"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder=" سال فوت  "
+      />
+    </div>
+    <div class="width">
+      <input
+        [(ngModel)]="search_origin_city"
+        class="outeline radius p-2 custom-bg border-0"
+        type="text"
+        placeholder="تابعیت"
+      />
+    </div>
+  </div>
+
+  <div class="w-100 d-flex justify-content-around mb-3 gap-3">
+    <div class="w-100">
+      <select
+        [(ngModel)]="search_birth_city"
+        class="btn-outline-success custom-width py-2 radius px-2 custom-bg-select-input border-0"
+        id="inputGroupSelect01"
+      >
+        <option [ngValue]= "''" selected>محل تولد</option>
+        <option *ngFor="let city of cities" [ngValue]="city">
+          {{ city }}
+        </option>
+      </select>
+    </div>
+    <div class="w-100">
+      <select
+        [(ngModel)]="search_death_city"
+        class="btn-outline-success custom-width py-2 radius px-2 custom-bg-select-input border-0"
+        id="inputGroupSelect01"
+      >
+         <option [ngValue]= "''">شهر محل وفات</option> 
+        <option *ngFor="let city of cities" [ngValue]="city" >
+          {{ city }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="w-100 d-flex justify-content-between gap-3">
+    <div class="w-100">
+      <select
+        [(ngModel)]="search_burial_city"
+        class="btn-outline-success custom-width py-2 radius px-2 custom-bg-select-input border-0"
+        id="inputGroupSelect01"
+      >
+        <option [ngValue]= "''" selected>شهر دفن شده</option>
+        <option *ngFor="let city of cities" [ngValue]="city">
+          {{ city }}
+        </option>
+      </select>
+    </div>
+    <div class="w-100">
+      <select
+        [(ngModel)]="search_cemetry_name"
+        class="btn-outline-success custom-width py-2 radius px-2 custom-bg-select-input custom-select-placeholde border-0"
+        id="inputGroupSelect01"
+      >
+        <option [ngValue]= "''" selected>نام قبرستان</option>
+        <option *ngFor="let cemetry of cemetryName" [ngValue]="cemetry">
+          {{ cemetry }}
+        </option>
+      </select>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between w-100">
+    <div class="d-flex flex-column w-50">
+      <p class="custom-text-color mt-1">جنسیت:</p>
+
+      <div class="d-flex align-items-center">
+        <div
+          *ngFor="let gender of genders"
+          class="px-1 d-flex align-items-center custom-margin"
+        >
+          <input
+            class="form-check-input ml"
+            type="radio"
+            name="flexRadioDefault"
+            value="{{ gender }}"
+            (change)="onGenderChange($event)"
+          />
+          <label
+            class="form-check-label custom-text-color"
+            for="flexRadioDefault1"
+          >
+            {{ gender }}
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column w-50">
+      <p class="custom-text-color mt-1">مرگ:</p>
+
+      <div class="d-flex align-items-center">
+        <div *ngFor="let death of deathType" class="px-1 d-flex align-items-center custom-margin">
+          <input
+            class="form-check-input ml"
+            type="radio"
+            name="flexRadioDefault1"
+            value="{{death}}"
+            id="flexRadioDefault2"
+            (change)="onDeathTypeChange($event)"
+          />
+          <label
+            class="form-check-label custom-text-color"
+            for="flexRadioDefault2"
+          >
+           {{death}}
+          </label>
+        </div>
+
+      
+      </div>
+    </div>
+  </div>
+  <div class="w-100 d-flex justify-content-center mt-2">
+    <button
+      (click)="searchUsers()"
+      class="custom-button-width custom-bg-select-input py-2 radius border-0 text-light"
+    >
+      جست و جو
+    </button>
+  </div>
+</div>
+
+
