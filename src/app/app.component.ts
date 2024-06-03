@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Users } from './user';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,24 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'search-bar';
+
+
+  filteredUsers: Users[];
+  
+  constructor() {
+    this.filteredUsers = [];
+  }
+  onFilteredUsers(filteredUsers: Users[]) {
+    this.filteredUsers = filteredUsers;
+  }
+  
+  
+
+
+  
 }
+
+
+
+
+//json-server --watch db.json
