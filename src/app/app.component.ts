@@ -23,9 +23,4 @@ export class AppComponent {
 
 
   
-}
-
-
-
-
-//json-server --watch db.json
+};
